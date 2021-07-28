@@ -66,6 +66,7 @@
             <id>github</id>
             <name>Internal Releases</name>
             <url>https://maven.pkg.github.com/pooja543/Kalamandir</url>
+	    <type>pom</type>
         </repository>
 	</distributionManagement>	
 	

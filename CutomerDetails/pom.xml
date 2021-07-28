@@ -33,7 +33,6 @@
 			<version>42.2.14</version>
 		</dependency>
 		<dependency>
-			
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
@@ -62,12 +61,16 @@
 	</dependencies>
 
 	<distributionManagement>
-	<repository>
-            <id>github</id>
-            <name>Internal Releases</name>
-            <url>https://maven.pkg.github.com/pooja543/Kalamandir</url>
-	    <type>pom</type>
-        </repository>
+		<dependencies>
+                <dependency>
+	              <repository>
+                         <id>github</id>
+                         <name>Internal Releases</name>
+                         <url>https://maven.pkg.github.com/pooja543/Kalamandir</url>
+	                 <type>pom</type>
+                        </repository>
+		</dependency>
+                </dependencies>
 	</distributionManagement>	
 	
 	<build>

@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-        working-directory: ./POS_DayClose
+        working-directory: ./CutomerDetails
     permissions:
       contents: read
       packages: write

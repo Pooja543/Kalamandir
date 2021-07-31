@@ -27,7 +27,7 @@ jobs:
         run: |
         working-directory: ${{env.working-directory}}
           mvn clean install
-          mvn -B package --file pom.xml
+          mvn -B package https://github.com/Pooja543/POS/tree/main/CutomerDetails --file pom.xml
           mkdir staging && cp target/*.war staging
           
           

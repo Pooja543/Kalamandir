@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<packaging>war</packaging>
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.5.1</version>
 		<relativePath /> <!-- lookup parent from repository -->
-		<packaging>war</packaging>
 	</parent>
 	<groupId>com.customer</groupId>
 	<artifactId>CustomerDetails</artifactId>
@@ -60,19 +60,6 @@
 
 	</dependencies>
 
-	<distributionManagement>
-		<dependencies>
-                <dependency>
-	              <repository>
-                         <id>github</id>
-                         <name>Internal Releases</name>
-                         <url>https://maven.pkg.github.com/pooja543/Kalamandir</url>
-	                 <type>pom</type>
-                        </repository>
-		</dependency>
-                </dependencies>
-	</distributionManagement>	
-	
 	<build>
 		<plugins>
 			<plugin>

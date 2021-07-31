@@ -1,7 +1,8 @@
 name: Github Actions Maven Build Example
 on:
   push:
-    branches: [ Devops ]
+    branches: 
+       main
   
 jobs:
   build:

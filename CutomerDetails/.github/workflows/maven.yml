@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-        working-directory: ./https://github.com/Pooja543/POS/blob/main/CutomerDetails/pom.xml
+        working-directory: ./CustomerDetails
     permissions:
       contents: read
       packages: write

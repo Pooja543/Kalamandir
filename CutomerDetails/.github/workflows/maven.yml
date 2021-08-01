@@ -1,13 +1,13 @@
 name: Github Actions Maven Build Example
 on:
   push:
-    branches: [ Devops ]
+    branches: [ main ]
   
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
-        working-directory: ./PointOfSale
+        working-directory: ./https://github.com/Pooja543/POS/blob/main/CutomerDetails/pom.xml
     permissions:
       contents: read
       packages: write

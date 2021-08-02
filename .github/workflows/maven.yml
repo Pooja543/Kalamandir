@@ -23,8 +23,7 @@ jobs:
 
       - name: Build with Maven
         run: |
-          mvn clean compile package -Dmaven.test.skip=true
-          mvn -B package --file CutomerDetails/pom.xml
+          mvn -B package --file CutomerDetails/pom.xml -Dmaven.test.skip=true
           mkdir staging && cp target/*.war staging
         
           

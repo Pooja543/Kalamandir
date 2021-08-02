@@ -58,9 +58,19 @@
 			<version>3.10.0</version>
 			<scope>test</scope>
 		</dependency>
-
-
 	</dependencies>
+	
+	<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <servers>
+    <server>
+      <id>github</id>
+      <username>ManikantaGupthaOtsi</username>
+	    <password>Vasavi@211</password>
+      <configuration></configuration>
+    </server>
+  </servers>
+</settings>
 
 	<build>
 		<plugins>

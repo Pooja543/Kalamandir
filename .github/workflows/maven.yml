@@ -23,4 +23,6 @@ jobs:
         server-id: github
         distribution: 'adopt'
     - name: Build with Maven
-      run: ./mvnw -B package --file POS/CutomerDetails/pom.xml
+      run: ./mvnw -B release:prepare release:perform
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

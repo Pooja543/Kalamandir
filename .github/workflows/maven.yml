@@ -24,7 +24,7 @@ jobs:
       - name: Build with Maven
         run: |
           mvn -B package --file CutomerDetails/pom.xml 
-          mvn install -Dmaven.test.skip=true
+          mvn install -DskipTests
           mkdir staging && cp target/*.war staging
         
           

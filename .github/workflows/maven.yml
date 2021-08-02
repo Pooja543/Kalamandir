@@ -26,6 +26,8 @@ jobs:
           chmod 777 pom.xml
           mvn -B package --file CustomerDetails/pom.xml
           mkdir staging && cp target/*.war staging
+        env:
+         GITHUB_TOKEN: ${{ secrets.PASSWORD }}  
           
       - name: set up a cache for maven
         uses: actions/cache@v2
@@ -33,7 +35,7 @@ jobs:
           path: ~/.m2
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
-        
+               
       - name: persist workflow data as artifact
         uses: actions/upload-artifact@v2
         with:

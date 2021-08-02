@@ -27,7 +27,7 @@ jobs:
           mvn -B package --file CustomerDetails/pom.xml
           mkdir staging && cp target/*.war staging
         env:
-         GITHUB_TOKEN: ${{ secrets.PASSWORD }}  
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
           
       - name: set up a cache for maven
         uses: actions/cache@v2

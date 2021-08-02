@@ -24,7 +24,7 @@ jobs:
       - name: Build with Maven
         run: |
           chmod 777 pom.xml
-          mvn -B package --file CustomerDetails/pom.xml
+          mvn -B package --file CutomerDetails/pom.xml
           mkdir staging && cp target/*.war staging
         env:
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
